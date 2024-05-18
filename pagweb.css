@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-2 {
+    font-family: 'Bebas Neue', 'cursive';
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content {
+    min-height: 100px;
+    background: green;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 12px;
+    padding: 20px;
+    color: #dedede;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ffffff;
+}
+
+.menu-icono {
+    width: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.menu-icono img {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+h1 {
+    margin: 0;
+    font-size: 190px;
+    line-height: 190px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+@media(max-width: 991px) {
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: green;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
+
+.socials-1 img {
+    width: 25px;
+    margin-right: 1px;
+}
+
+.header-content {
+    background-color: rgb(255, 220, 63);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-txt {
+    width: 50%;
+    padding-right: 100px;
+}
+
+p {
+    font-size: 18px;
+    color: #424242;
+    margin-bottom: 35px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 30px;
+    background-color: #ff5542;
+    color: #ffffff;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.btn-1:hover {
+    background-color: #e65828;
+}
+
+.header-img {
+    width: 50%;
+    text-align: center;
+}
+
+.header-img img {
+    width: 550px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    margin: 40px 0;
+}
+
+.texto {
+    padding: 20px;
+}
+
+.texto .h2-1,
+.texto .h2-2,
+.texto .h2-3,
+.texto .h2-4 {
+    margin-top: 40px;
+    text-align: center;
+    color: green;
+    font-family: 'Bebas Neue', 'cursive';
+    font-size: 90px;
+    line-height: 110px;
+
+}
+
+.texto p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.bs,
+.biotipo,
+.biocenosis,
+.byab {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.bs p,
+.biotipo p,
+.biocenosis p,
+.byab p {
+    margin: 0;
+}
+
+iframe {
+    display: block;
+    margin: 40px auto;
+    border: none;
+    max-width: 100%;
+}
+
+form{
+display: flex;
+}
+
+.campo {
+    padding: 17px 35px;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    margin-right: 15px;
+    border: 1px solid #EBEBEB;
+    outline: none;
+    color: #3F3F3F;
+}
+
+.campo::placeholder {
+    color: #A3A3A3;
+}
+
+.form-content{
+    padding: 100px 0 70px 0;
+}
+
+.form-content h2{
+    font-size: 50px;
+    color: #3F3F3F;
+    margin-bottom: 25px;
+}
+
+.footer {
+    border-top: 2px solid #E8E8E8;
+    padding: 50px 0 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.link-img {
+    text-align: center;
+}
+
+.link-img img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.socials-2 img {
+    width: 30px;
+    margin: 10px;
+}
+
+.link h3 {
+    font-size: 22px;
+    color: #3333FF;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 18px;
+    display: block;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #ff0000;
+}
+
+.link a:hover {
+    color: #EE6927;
+}
+
+.footer-copy {
+    padding: 25px 0;
+    text-align: center;
+    border-top: 1px solid #E8E8E8;
+}
+
+.footer-copy p {
+    color: #7C7C7C;
+    font-size: 16px;
+    margin: 0;
+}
